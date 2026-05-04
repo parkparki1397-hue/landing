@@ -1,70 +1,231 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لندینگ معرفی محصول</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 گل‌های بهشت | فروشگاه اینترنتی گل</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* تنظیمات اضافی Tailwind برای RTL */
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Tahoma', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">محصول برتر</div>
-            <ul>
-                <li><a href="#">خانه</a></li>
-                <li><a href="#">ویژگی‌ها</a></li>
-                <li><a href="#">مزایا</a></li>
-                <li><a href="#">تماس</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-50">
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>بهترین انتخاب برای پیشرفت کسب‌وکار شما</h1>
-            <p>با محصول ما، کارایی تیم خود را تا ۳ برابر افزایش دهید. ساده، سریع و حرفه‌ای.</p>
-            <button class="btn-primary">شروع رایگان</button>
-            <button class="btn-secondary">مشاهده دمو</button>
+  <!-- ================= هدر (Header) ================= -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center">
+          <span class="text-white text-xl">🌸</span>
         </div>
-    </section>
+        <span class="font-bold text-xl text-gray-800">گل‌های بهشت</span>
+      </div>
+      <nav class="hidden md:flex gap-8">
+        <a href="#home" class="text-gray-600 hover:text-rose-500 transition">خانه</a>
+        <a href="#about" class="text-gray-600 hover:text-rose-500 transition">درباره محصول</a>
+        <a href="#features" class="text-gray-600 hover:text-rose-500 transition">ویژگی‌ها</a>
+        <a href="#gallery" class="text-gray-600 hover:text-rose-500 transition">گالری</a>
+        <a href="#contact" class="text-gray-600 hover:text-rose-500 transition">تماس با ما</a>
+      </nav>
+      <button class="bg-rose-500 text-white px-5 py-2 rounded-full hover:bg-rose-600 transition">
+        سفارش دهید
+      </button>
+    </div>
+  </header>
 
-    <section class="features">
-        <h2>چرا محصول ما؟</h2>
-        <div class="features-container">
-            <div class="feature-card">
-                <div class="icon">⚡</div>
-                <h3>سرعت بالا</h3>
-                <p>پردازش سریع داده‌ها و پاسخگویی آنی</p>
+  <!-- ================= اسلایدر بالا (Hero Slider) ================= -->
+  <section id="home" class="relative">
+    <div class="swiper mySwiper w-full h-[500px] md:h-[600px]">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4476bae0?w=1600&h=600&fit=crop" alt="رز قرمز" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center justify-end px-10 md:px-20">
+            <div class="text-white text-right max-w-xl">
+              <h2 class="text-3xl md:text-5xl font-bold mb-4">رز سرخ مهربانی</h2>
+              <p class="text-lg md:text-xl">نماد عشق و زیبایی، هدیه‌ای ماندگار برای عزیزانتان</p>
             </div>
-            <div class="feature-card">
-                <div class="icon">🔒</div>
-                <h3>امنیت کامل</h3>
-                <p>رمزنگاری پیشرفته و حفاظت از اطلاعات</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">💡</div>
-                <h3>رابط کاربری هوشمند</h3>
-                <p>طراحی ساده و کاربرپسند برای همه سنین</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon">📊</div>
-                <h3>گزارشات تحلیلی</h3>
-                <p>داشبورد حرفه‌ای با نمودارهای پیشرفته</p>
-            </div>
+          </div>
         </div>
-    </section>
-
-    <section class="cta">
-        <h2>همین الان شروع کن!</h2>
-        <p>عضویت در خبرنامه و دریافت تخفیف ویژه</p>
-        <div class="email-form">
-            <input type="email" placeholder="ایمیل خود را وارد کنید">
-            <button>ثبت نام</button>
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative">
+          <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd9a7fd7?w=1600&h=600&fit=crop" alt="لاله" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center justify-end px-10 md:px-20">
+            <div class="text-white text-right max-w-xl">
+              <h2 class="text-3xl md:text-5xl font-bold mb-4">لاله بهاری</h2>
+              <p class="text-lg md:text-xl">نشاط و طراوت بهار را به خانه بیاورید</p>
+            </div>
+          </div>
         </div>
-    </section>
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative">
+          <img src="https://images.unsplash.com/photo-1470506028280-a011fb34b6f7?w=1600&h=600&fit=crop" alt="ارکیده" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent flex items-center justify-end px-10 md:px-20">
+            <div class="text-white text-right max-w-xl">
+              <h2 class="text-3xl md:text-5xl font-bold mb-4">ارکیده سلطنتی</h2>
+              <p class="text-lg md:text-xl">شکوه و زیبایی خاص برای دکوراسیون شما</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 محصول برتر. تمامی حقوق محفوظ است.</p>
-    </footer>
+  <!-- ================= درباره محصول ================= -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">درباره محصول</h2>
+        <div class="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 animate-float">
+          <img src="https://images.unsplash.com/photo-1491147334573-44c6e3beead5?w=600&h=500&fit=crop" alt="دسته گل رز" class="rounded-2xl shadow-xl w-full object-cover h-96">
+        </div>
+        <div class="md:w-1/2 text-right">
+          <h3 class="text-2xl font-bold text-rose-600 mb-4">گل رز مهربانی</h3>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            گل رز مهربانی، ترکیبی منحصربه‌فرد از زیبایی طبیعی و عطر دل‌انگیز است که با استفاده از 
+            جدیدترین روش‌های گلخانه‌ای و مراقبت‌های ویژه پرورش یافته است.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            هر شاخه از این گل‌ها با دقت و عشق انتخاب و بسته‌بندی می‌شود تا بهترین تجربه هدیه دادن 
+            را برای شما به ارمغان بیاورد.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <div class="bg-rose-50 p-4 rounded-xl text-center flex-1">
+              <div class="text-2xl font-bold text-rose-600">۱۰۰%</div>
+              <div class="text-sm text-gray-500">طبیعی و تازه</div>
+            </div>
+            <div class="bg-rose-50 p-4 rounded-xl text-center flex-1">
+              <div class="text-2xl font-bold text-rose-600">۲۴</div>
+              <div class="text-sm text-gray-500">ساعت تضمین تازگی</div>
+            </div>
+            <div class="bg-rose-50 p-4 rounded-xl text-center flex-1">
+              <div class="text-2xl font-bold text-rose-600">۱۰۰۰+</div>
+              <div class="text-sm text-gray-500">خریداران راضی</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ویژگی‌ها ================= -->
+  <section id="features" class="py-16 bg-gradient-to-b from-rose-50 to-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">چرا محصول ما؟</h2>
+        <div class="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition group">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-500 transition"><span class="text-3xl group-hover:text-white">🌿</span></div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">کاملاً طبیعی</h3>
+          <p class="text-gray-500">بدون هیچ گونه مواد شیمیایی</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition group">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-500 transition"><span class="text-3xl group-hover:text-white">🚚</span></div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">ارسال سریع</h3>
+          <p class="text-gray-500">تحویل در کمتر از ۲۴ ساعت</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition group">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-500 transition"><span class="text-3xl group-hover:text-white">💝</span></div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">بسته‌بندی لوکس</h3>
+          <p class="text-gray-500">مناسب برای هدیه</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition group">
+          <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-rose-500 transition"><span class="text-3xl group-hover:text-white">✨</span></div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">عطر و ماندگاری</h3>
+          <p class="text-gray-500">بیش از ۱۰ روز طراوت</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= گالری ================= -->
+  <section id="gallery" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">گالری تصاویر</h2>
+        <div class="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- تصاویر گالری -->
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1490750967868-88aa4476bae0?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">دسته گل لوکس</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd9a7fd7?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">شکوفه‌های بهاری</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1470506028280-a011fb34b6f7?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">ارکیده سلطنتی</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1491147334573-44c6e3beead5?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">دسته گل عروسی</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1519376778740-fcf6b5e6c30c?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">لاله هلندی</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1526047939437-3f8a5e89042a?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">سنبل معطر</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1532958669036-162b6f8d6c67?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">مخمل کبود</span></div></div>
+        <div class="relative group overflow-hidden rounded-xl shadow-md"><img src="https://images.unsplash.com/photo-1557747398-1e40e1a778fb?w=400&h=300&fit=crop" class="w-full h-64 object-cover group-hover:scale-110 transition" alt="گل"><div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"><span class="text-white font-bold">میخک صدپر</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= فوتر (تماس با ما) ================= -->
+  <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 bg-rose-500 rounded-full flex items-center justify-center"><span class="text-white text-xl">🌸</span></div><span class="font-bold text-xl">گل‌های بهشت</span></div>
+          <p class="text-gray-400 text-sm">ارائه‌دهنده بهترین و باکیفیت‌ترین گل‌های طبیعی با بسته‌بندی لوکس و ارسال سریع.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">دسترسی سریع</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#home" class="hover:text-rose-500 transition">خانه</a></li>
+            <li><a href="#about" class="hover:text-rose-500 transition">درباره محصول</a></li>
+            <li><a href="#features" class="hover:text-rose-500 transition">ویژگی‌ها</a></li>
+            <li><a href="#gallery" class="hover:text-rose-500 transition">گالری</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">تماس با ما</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-center gap-3"><span>📍</span> تهران، خیابان ولیعصر، پلاک ۱۲۳</li>
+            <li class="flex items-center gap-3"><span>📞</span> ۰۲۱-۱۲۳۴۵۶۷۸</li>
+            <li class="flex items-center gap-3"><span>📱</span> ۰۹۱۲۳۴۵۶۷۸۹</li>
+            <li class="flex items-center gap-3"><span>✉️</span> info@golha.ir</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">شبکه‌های اجتماعی</h3>
+          <div class="flex gap-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition">📘</a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition">📷</a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition">💬</a>
+          </div>
+          <div class="mt-6">
+            <h4 class="text-sm font-bold mb-2">عضویت در خبرنامه</h4>
+            <div class="flex"><input type="email" placeholder="ایمیل شما" class="flex-1 px-3 py-2 rounded-r-lg text-gray-800 outline-none"><button class="bg-rose-500 px-4 py-2 rounded-l-lg hover:bg-rose-600">عضویت</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+        <p>© ۱۴۰۴ تمامی حقوق برای گل‌های بهشت محفوظ است.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
